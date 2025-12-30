@@ -29,8 +29,11 @@ st.sidebar.caption("🚀 Powered by **Yönetici Eren**")
 
 # 3. ANA EKRAN (SAĞ TARAF)
 
-# Başlık Görseli
-st.image("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop", use_column_width=True)
+# Başlık Görseli - 3 sütunlu layout (1, 2, 1 oranında)
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop", use_column_width=True)
+    
 st.title(f"🎢 {hisse} Lunaparkı")
 
 if st.sidebar.button("Analizi Başlat 🔥", type="primary"):
