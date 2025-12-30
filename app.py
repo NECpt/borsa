@@ -34,7 +34,7 @@ st.image("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=12
 st.title(f"🎢 {hisse} Lunaparkı")
 
 if st.sidebar.button("Analizi Başlat 🔥", type="primary"):
-    # --- DİKKAT: TRY BURADA BAŞLIYOR ---
+    # --- TRY BLOĞU BAŞLIYOR (Hata koruması) ---
     try:
         kodu = hisse + ".IS" if not hisse.endswith(".IS") else hisse
         
@@ -110,7 +110,7 @@ if st.sidebar.button("Analizi Başlat 🔥", type="primary"):
                 )
                 st.pyplot(fig)
 
-    # --- İŞTE EKSİK OLAN KISIM BURASIYDI ---
+    # --- KRİTİK KISIM: KOPAN PARÇA BURASIYDI ---
     except Exception as e:
         st.error(f"Bir şeyler ters gitti: {e}")
 
