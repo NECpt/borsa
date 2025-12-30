@@ -1,0 +1,6 @@
+[theme]
+primaryColor="#FF4B4B"  # Butonlar ve vurgular (Parlak Kırmızı/Pembe)
+backgroundColor="#0E1117" # Ana arka plan (Koyu Siyah/Lacivert)
+secondaryBackgroundColor="#262730" # Yan menü arka planı (Daha açık koyu)
+textColor="#FAFAFA" # Yazı rengi (Beyaz)
+font="sans serif" # Daha modern bir yazı tipi
